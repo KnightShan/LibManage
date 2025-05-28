@@ -27,14 +27,39 @@ LibManage is a simple yet powerful Library Management System built in Python. It
 
 ---
 
-## Getting Started
+## Setup Instructions
 
-### Prerequisites
+1. **Clone the repository**
 
-Make sure you have Python 3.10 or higher installed. Also, install the required Python packages:
+   ```bash
+   git clone https://github.com/KnightShan/LibManage.git
+   cd Library Management System
 
-```bash
-pip install pandas matplotlib
+2. **Install dependencies**  
+   Make sure you have Python 3.10+ installed. Then install required packages:
+   ```bash
+   pip install pandas matplotlib
+   
+3. **Prepare CSV files**  
+   Create empty CSV files (book.csv, member.csv, issuebooks.csv, users.csv) in the project directory with the following headers:
+   
+   - book.csv:  
+     bookid,title,author,publisher,edition,cost,category
 
+   - member.csv:  
+     mid,m_name,phoneno,numberofbooksissued
+
+   - issuebooks.csv:  
+     book_name,m_name,dateofissue,numberofbookissued,datereturn
+
+   - users.csv:  
+     username,password
+
+ 5. **Run the program**
+    ```bash
+    python main.py
+
+  6. **Login**  
+     Use credentials from users.csv to log in and start managing the library.
 
 
